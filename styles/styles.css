@@ -1,7 +1,7 @@
                                              /* Shared Styles */
 *{margin: 0;}
 .quicksand{font-family: "Quicksand", serif; font-optical-sizing: auto; font-weight: 400; font-style: normal;}
-nav, section{max-width: 1440px; margin: auto;}
+nav, section > div{max-width: 1440px; margin: auto;}
 .b-1{border-radius: 12px; color: white; font-size: 1.25rem; font-weight: 500; padding: 10px 48px; border: none;}
 .bg-black{background-color: black;}
 .bg-orange{background-color: orange;}
@@ -9,6 +9,9 @@ nav, section{max-width: 1440px; margin: auto;}
 .skyblue{color: rgba(1, 172, 253, 1);}
 .cyan{color: rgba(5, 212, 223, 1);}
 .violet{color: rgba(93, 88, 239, 1);}
+h2{font-size: 3rem;}
+h4{font-size: 1.5rem;}
+p{font-size: 1rem; color: rgba(128, 128, 128, 1); font-weight: 500;}
                                                   /* Nav */
 nav{
     display: flex;
@@ -54,13 +57,77 @@ header hr{
     justify-content: space-between;
     align-items: center;
 }
+                                            /* Curriculum */
+.curriculum-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto;
+    gap: 30px;
+}
+.curriculum-card{
+    border-radius: 19px;
+    border: none;
+    padding: 55px 42px;
+    background-color: rgb(255, 255, 255,0.7);
+    box-shadow:  0 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+    width: 370px;
+    height: 370px;
+    background-color: white;
+}
+.card-1{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)60%, rgba(222, 245, 255, 1));
+    border: 0.5px solid rgba(222, 245, 255, 1);
+}
+.card-2{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)60%,rgba(255, 244, 220, 1));
+    border: 0.5px solid rgba(255, 244, 220, 1);
+}
+.card-3{
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)60%,rgba(238, 225, 255, 1));
+    border: 0.5px solid rgba(238, 225, 255, 1);
+}
+    .curriculum{
+    text-align: center;
+    background-image: url('../assets/bg.png');
+    padding: 60px 0;
+}
+.curriculum-card h4{
+    margin: 32px auto;
+}
+.curriculum-card a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.curriculum-card p{
+    margin-bottom: 35px;
+}
+.curriculum-card img{
+    width: 138px;
+    height: 138px;
+}
+.curriculum-btn{
+    color: white;
+    background-color: orange;
+    border-radius: 50%;
+    border: none;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 7px;
+}
+
 
 
 
 
 @media screen and (max-width: 576px) {
-    .nav-t,.nav-ul,nav .b-1{display: none;}
-    .banner{padding:20px 10px;}
+    .nav-t,.nav-ul,nav .b-1, .curriculum-btn{display: none;}
+    .banner, .curriculum{padding:20px 10px;}
+    .banner-t{font-size: 2rem;}
+    .banner-p{font-size: 1rem;}
+    h2{font-size: 2rem;}
 
     .nav-i{display: block !important;}
     nav{margin: 0 16px;}
@@ -68,4 +135,7 @@ header hr{
 
     .banner{display: flex; flex-direction: column-reverse; text-align: center; }
     .banner img{width: calc(100% - 10px);}
+
+    .curriculum-cards{display: flex; flex-direction: column; margin-top: 20px;}
+    .curriculum-card{width: calc(100% - 100px);}
 }
