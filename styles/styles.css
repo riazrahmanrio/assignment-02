@@ -16,6 +16,14 @@ nav, section > div, footer > div{max-width: 1440px; margin: auto;}
 h2{font-size: 3rem;}
 h4{font-size: 1.5rem;}
 p{font-size: 1rem; color: rgba(128, 128, 128, 1); font-weight: 500;}
+marquee{
+    background-color: black;
+    padding: 30px 0;
+    align-self: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
                                                   /* Nav */
 nav{
     display: flex;
